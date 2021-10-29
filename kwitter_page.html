@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Kwitter Page</title>
+        <link rel="icon" href="https://keycombiner.com/media/application-icons/twitter.png">
+        <link rel="spreadsheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid text-center">
+            <button id="logout" onclick="logout();" style="float: right; margin-top: 5px;" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+            <br>
+            <h1 id="jk">Kwitter</h1>
+            <br>
+            <div id="outputSUS"></div>
+            <br>
+            <input class="form-control col-sm-8" id="A_SUS" placeholder="Enter your message here!" type="text">
+            <br>
+            <button class="btn btn-success" onclick="send()">Send</button>
+        </div>
+    </body>
+    <script src="booer.js"></script>
+</html>
